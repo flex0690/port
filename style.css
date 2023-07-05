@@ -1,0 +1,361 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    position: relative;
+    overflow: hidden;
+}
+
+#page {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+}
+
+#page1 {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    /* background-color: #11ffee00; */
+    /* z-index: 10;  */
+
+    /* background-color: transparent; */
+    /* z-index: 10; */
+}
+
+#page2 {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+
+    z-index: 10;
+
+    background-color: #11ffee00;
+
+    background-color: transparent;
+
+
+
+}
+
+#page3 {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    z-index: 10;
+    background-color: #11ffee00;
+
+    background-color: transparent;
+
+}
+
+canvas {
+    position: relative;
+    z-index: 1;
+    max-width: 100vw;
+    max-height: 100vh;
+}
+
+#loop {
+    display: flex;
+    position: absolute;
+    top: 30%;
+    height: 25%;
+    width: 100%;
+    font-size: 100px;
+    white-space: nowrap;
+    font-family: gilroy;
+}
+
+#loop>h1 {
+    font-weight: 400;
+    animation-name: anim;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#loop>h1>span {
+    -webkit-text-stroke: 1.2px #000;
+    color: transparent;
+    font-weight: 500;
+}
+
+@keyframes anim {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* --------------------NAV------------------------ */
+#nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 7%;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    margin-top: 40px;
+    /* padding:  10px; */
+}
+
+#nav>h3 {
+    font-family: gilroy;
+    font-weight: 400;
+    font-size: 22px;
+}
+
+#nav>button {
+    padding: 10px 20px;
+    border-radius: 50px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+}
+
+#page>h3 {
+    position: absolute;
+    top: 55%;
+    font-family: gilroy;
+    font-weight: 400;
+    color: #7c7c7c;
+    left: 5%;
+}
+
+#page>h4 {
+    position: absolute;
+    top: 62%;
+    left: 25%;
+    font-family: gilroy;
+    font-weight: 500;
+}
+
+#page1>#right-text {
+    position: absolute;
+    /* font-size:  100px;; */
+    top: 30%;
+    left: 10%;
+}
+
+#page1>#right-text>h1 {
+    font-weight: 400;
+    /* font-size: 100px; */
+    color: #5b4a4a;
+}
+
+#page1>#right-text>h1>span {
+    color: black;
+    font-weight: 600;
+}
+
+#page1>#right-text>h1 {
+    line-height: 1.5;
+    font-size: 50px;
+}
+
+#page1>#left-text {
+    position: absolute;
+    top: 35%;
+    right: 10%;
+    /* text-align: ; */
+}
+
+#page1>#left-text>h1 {
+    font-size: 50px;
+    line-height: 1.5;
+}
+
+#page1>#left-text>h3 {
+    color: #7c7c7c;
+    font-weight: 400;
+    font-size: 20px;
+
+}
+
+/* -----------page 2----------- */
+/*------------ MY Code project----- */
+#page2>#text1 {
+    position: absolute;
+    top: 15%;
+    left: 10%;
+}
+
+#page2>#text1>#imgs {
+
+    /* position: absolute; */
+    display: flex;
+    flex-direction: column;
+}
+
+#page2>#text1>.inside1 {
+    /* font-size: 50px; */
+    margin-top: 2%;
+}
+
+#page2>#text1>.inside1>h1 {
+    font-size: 50px;
+}
+
+#page2>#text1>.inside1>.sidebyside {
+    margin-top: 10px;
+    height: auto;
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+}
+
+#page2>#text1>.inside1>.sidebyside>a {
+
+    padding-left: 20px;
+    margin-top: 5px;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 600;
+    color: #596058;
+}
+
+#page2>#text1>.inside1>.sidebyside>a:hover {
+    color: rgb(43, 208, 95);
+    transition: 0.5s;
+    cursor: grab;
+}
+
+#page2>#text1>.inside1>.points {
+    width: 23%;
+    padding-top: 10px;
+    font-size: 20px;
+    /* text-align: center; */
+    color: #605858;
+
+}
+
+/* ----------Project End----------- */
+
+#page3>.mini {
+    height: 100vh;
+    /* width: 90vw; */
+    padding-left: 10vw;
+    padding-right: 10vw;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: aquamarine; */
+    /* border: 1px solid black; */
+}
+
+#page3>.mini>.touch {
+    width: 30%;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    margin-top: 20%;
+    /* background-color: blue; */
+}
+.last{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 60px
+}
+.last>h1{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.last>p{
+    margin-left: 30px;
+    margin-right: 15px;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 20px;
+    color: #7c7c7c;
+}
+.social {
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    display: flex;
+    justify-content: space-between;
+    width: 15vw;
+    /* background-color: aqua; */
+    height: 40vh;
+}
+button{
+    width: 35%;
+    height: 7%;
+    font-size: 15px;
+    background-color: white;
+    border: 1px solid #7c7c7c;
+    box-shadow: 1px 1px 4px #7c7c7c;
+
+}
+button:hover{
+    background-color: #000;
+    color: white;
+    transition: 0.5s;
+    box-shadow: none;
+    cursor: grab;
+}
+
+.socialcol {
+    /* background-color: rebeccapurple; */
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.mail {
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+}
+
+a{
+    text-decoration: none;
+    color: #596058;
+    font-family: 'League Spartan', sans-serif;
+    font-family: 'Lobster', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Rubik', sans-serif;
+}
+
+
+.mail>p {
+    font-family: 'League Spartan', sans-serif;
+    font-family: 'Lobster', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Rubik', sans-serif;
+}
+.mail>p>a:hover{
+    /* font-weight: 400; */
+    color:rgb(43, 208, 95) ;
+    transition: 0.5s;
+}
+i{
+    transition: 0.3s ease-in;
+}
+i:hover{
+    /* font-weight: 600; */
+    font-size: 40px;
+    /* box-shadow: -50px 0px 2px #7c7c7c; */
+    transition: 0.3s ease-in;
+}
